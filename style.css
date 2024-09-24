@@ -92,14 +92,54 @@ header {
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
     color: #ffffff;
     background-color: #4dd9b6; 
     text-decoration: none;
-    border-radius: 5px; 
+    width: auto;
+    padding: 10px 10% 10px 10%;
+    border-radius: 12px;
+    border: 0px;
+    font-size: 15px;
 }
 
 .cta-button:hover {
     background-color: #a5eefc;
+}
+
+
+/* Style général pour toutes les sections */
+section {
+    display: flex; /* Met les éléments en ligne (image + texte) */
+    padding: 20px;
+    align-items: center; /* Centre verticalement l'image et le texte */
+}
+
+/* Limite la taille des images */
+.image img {
+    max-width: 200px;
+    height: auto; /* Conserve les proportions */
+    border-radius: 12px;
+}
+
+/* Style spécifique pour la première section (image à gauche) */
+.section-cocktail1 {
+    background-color: #efefef; /* Fond bleu */
+    color: white;
+    padding: 150px;
+}
+
+/* Style spécifique pour la deuxième section (image à droite) */
+.section-cocktail2 {
+    background-color: #2ecc71; /* Fond vert */
+    color: white;
+    padding: 150px;
+}
+
+/* Optionnel : Espacement entre image et texte */
+.image {
+    margin-right: 20px; /* Pour la première section */
+}
+
+.section-cocktail2 .image {
+    margin-left: 20px; /* Pour la deuxième section */
 }
