@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    padding: 0;
+
+}
+
+header {
+    background-color: #4dd9b6; 
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+#menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px ;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+.acceuil-background {
+    height: 100vh; /* Hauteur de la fenêtre */
+    width: 100vw;  /* Largeur de la fenêtre */
+    overflow: hidden; /* Évite les barres de défilement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .acceuil-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recouvre tout l'espace sans déformation */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+
+
+  .text-acceuil {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajuste la position au centre */
+    text-align: center; 
+    color: #ffffff; 
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.text-acceuil h1 {
+    font-size: 48px; /* Taille du titre */
+    margin: 0 0 20px 0; /* Espacement sous le titre */
+}
+
+.text-acceuil p {
+    font-size: 19.2px; /* Taille du paragraphe */
+    margin: 0 0 20px 0; /* Espacement sous le paragraphe */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #4dd9b6; 
+    text-decoration: none;
+    border-radius: 5px; 
+}
+
+.cta-button:hover {
+    background-color: #a5eefc;
+}
