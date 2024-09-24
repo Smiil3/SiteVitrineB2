@@ -3,6 +3,8 @@ body {
     .formulaire__container {
         display: flex;
         justify-content: center;
+        height: 80vh;
+        align-items: center;
         .formulaire {
             display: flex;
             flex-direction: column;
