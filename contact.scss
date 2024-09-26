@@ -14,6 +14,7 @@ body {
             .flexColumn {
                 display: flex;
                 flex-direction: column;
+                margin-top: 15px;
                 #message {
                     height: 10vh;
                     resize: none;
@@ -37,6 +38,21 @@ body {
                 justify-content: space-between;
                 .fiftyInput {
                     width: 49%;
+                }
+            }
+            .buttonContainer {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                button {
+                    padding: 10px 10% 10px 10%;
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 12px;
+                    border: 0px;
+                    font-size: 15px;
+                    border-right: 5px solid rgb(248, 164, 55);
+                    border-bottom: 5px solid rgb(248, 164, 55);
+                    width: auto;
                 }
             }
         }
