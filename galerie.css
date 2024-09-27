@@ -1,19 +1,48 @@
 .container-img {
-  overflow: hidden;
   border-radius: 12px;
   height: 390px;
+  position: relative;
   max-width: 250px;
   padding: 0;
   margin-bottom: 3rem;
 }
+.container-img p {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  color: white;
+  padding: 3%;
+}
+
+.container-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.1) 85%, transparent 100%);
+}
 
 .container-img-bis {
-  overflow: hidden;
+  position: relative;
   border-radius: 12px;
   height: 390px;
   max-width: 250px;
   padding: 0;
   margin-top: 3rem;
+}
+
+.container-img-bis::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.1) 85%, transparent 100%);
 }
 
 .img-cocktail {
@@ -23,6 +52,8 @@
      object-fit: cover;
   transition: 0.3s ease-in-out;
   transform: scale(1);
+  position: relative;
+  border-radius: 12px;
 }
 
 .section-container {
