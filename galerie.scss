@@ -1,10 +1,21 @@
+$color1: #fabc1d;
+$color2: #000000;
+$color3: #ffffff;//#479e9c;
+$color4: #f15d49;
+$color5: #ffffff;
+
+body{
+    background-color: $color1;
+}
 .container-img{
     border-radius: 12px;
+    border: 3px solid black;
     height: 390px;
     position: relative;
     max-width: 250px;
     padding: 0;
     margin-bottom: 3rem;
+    overflow: hidden;
     p{
         position: absolute;
         bottom: 0;
@@ -24,7 +35,9 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.1) 85%, transparent 100%);
 }
 .container-img-bis{
+    overflow: hidden;
     position: relative;
+    border: 3px solid black;
     border-radius: 12px;
     height: 390px;
     max-width: 250px;
@@ -48,7 +61,6 @@
     transition: .3s ease-in-out;
     transform: scale(1); 
     position: relative;
-    border-radius: 12px;
 }
 .section-container{
     display: flex;
