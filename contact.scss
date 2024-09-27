@@ -1,58 +1,111 @@
+$color1: #fabc1d;
+$color2: #000000;
+$color3: #ffffff;//#479e9c;
+$color4: #f15d49;
+$color5: #ffffff;
 body {
-    background-color: antiquewhite;
+    background-color: $color1;
     .formulaire__container {
-        display: flex;
-        justify-content: center;
-        height: 80vh;
-        align-items: center;
-        .formulaire {
+        .formulaire__bottom {
+            background-color: $color1;
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: 40%;
-            height: 40vh;
-            .flexColumn {
+            justify-content: space-around;
+            height: 55vh;
+            align-items: center;
+            img {
+                height: 500px;
+                border: 3px solid black;
+                border-radius: 12px;
+            }
+            .formulaire {
+                .formulaire__info {
+
+                    margin-bottom: 5%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .contactTitle {
+                        font-family: "Lilita One", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 50px;
+                    }
+                    .paragrapheTitle {
+                        width: 85%;
+                        margin: 0;
+                        text-align: center;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
                 display: flex;
                 flex-direction: column;
-                margin-top: 15px;
-                #message {
-                    height: 10vh;
-                    resize: none;
-                    border-radius: 12px;
-                    border: 0px;
-                    border-right: 5px solid rgb(248, 164, 55);
-                    border-bottom: 5px solid rgb(248, 164, 55);
-                    padding: 10px;
+                justify-content: space-evenly;
+                width: 40%;
+                .flexColumn {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                    label {
+                        font-family: "Lilita One", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 18px;
+                    }
+                    #message {
+                        height: 10vh;
+                        resize: none;
+                        border-radius: 12px;
+                        border: 0px;
+                        border: 3px solid $color2;
+                        padding: 10px;
+                        background-color: $color3;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                    input {
+                        height: 2.5vh;
+                        border-radius: 12px;
+                        border: 0px;
+                        border: 3px solid $color2;
+                        padding: 10px;
+                        background-color: $color3;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                    }
                 }
-                input {
-                    height: 2.5vh;
-                    border-radius: 12px;
-                    border: 0px;
-                    border-right: 5px solid rgb(248, 164, 55);
-                    border-bottom: 5px solid rgb(248, 164, 55);
-                    padding: 10px;
+                .nameFirstnameContainer {
+                    display: flex;
+                    justify-content: space-between;
+                    .fiftyInput {
+                        width: 49%;
+                    }
                 }
-            }
-            .nameFirstnameContainer {
-                display: flex;
-                justify-content: space-between;
-                .fiftyInput {
-                    width: 49%;
-                }
-            }
-            .buttonContainer {
-                display: flex;
-                justify-content: center;
-                margin-top: 30px;
-                button {
-                    padding: 10px 10% 10px 10%;
-                    background-color: rgb(255, 255, 255);
-                    border-radius: 12px;
-                    border: 0px;
-                    font-size: 15px;
-                    border-right: 5px solid rgb(248, 164, 55);
-                    border-bottom: 5px solid rgb(248, 164, 55);
-                    width: auto;
+                .buttonContainer {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+                    button {
+                        padding: 10px 10% 10px 10%;
+                        background-color: $color4;
+                        border-radius: 12px;
+                        border: 0px;
+                        font-size: 18px;
+                        border: 3px solid $color2;
+                        width: auto;
+                        font-family: "Lilita One", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: $color5;
+                        cursor: pointer;
+                    }
+                    button:hover {
+                        color: rgb(0, 0, 0);
+                      }
                 }
             }
         }
