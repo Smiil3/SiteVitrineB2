@@ -1,0 +1,108 @@
+$color1: #fabc1d;
+$color2: #000000;
+$color3: #ffffff;//#479e9c;
+$color4: #f15d49;
+$color5: #ffffff;
+
+body {
+    background-color: $color1;
+}
+main {
+    margin-top: 15%;
+}
+.product__container {
+    display: flex;
+    justify-content: space-evenly;
+    div {
+        .backArrow {
+            background-color: $color4;
+            border-radius: 12px;
+            border: 0px;
+            font-size: 20px;
+            border: 3px solid $color2;
+            width: auto;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: $color5;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .backArrow:hover {
+            color: $color2;
+        }
+    }
+    .image__container {
+        margin-top: 40px;
+        width: 450px;
+        height: 650px;
+        overflow: hidden;
+        border: 3px solid $color2;
+        border-radius: 12px;
+        img {
+            width: 100%;
+        }
+    }
+    .text__container {
+        align-items: center;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .back {
+            padding: 10px 10% 10px 10%;
+            background-color: $color4;
+            border-radius: 12px;
+            border: 0px;
+            font-size: 18px;
+            border: 3px solid $color2;
+            width: auto;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: $color5;
+            cursor: pointer;
+        }
+        .back:hover {
+            color: rgb(0, 0, 0);
+        }
+        .itemSubtitle {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: $color1;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        .itemTitle {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+            margin: 0;
+        }
+        .description__container {
+            width: 70%;
+            background-color: $color3;
+            border: 3px solid black;
+            border-radius: 12px;
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            .itemParagraph {
+                text-align: justify;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                margin: 0;
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+
+
+    }
+}
