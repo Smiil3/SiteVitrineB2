@@ -1,0 +1,38 @@
+body {
+  background-color: #fabc1d;
+}
+
+h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
+
+.container-mentions {
+  margin-top: 50px !important;
+  width: 70%;
+  background-color: #ffffff;
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+.container-mentions a {
+  text-decoration: none;
+  color: #000000;
+}
+.container-mentions a:hover {
+  color: #fabc1d;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 912px) {
+  body {
+    margin-top: 150px;
+  }
+}/*# sourceMappingURL=mentions.css.map */
