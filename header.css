@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
   width: 100%;
   top: 3%;
   display: flex;
@@ -78,6 +78,10 @@ main {
 }
 
 .menu-icon {
+  display: none;
+}
+
+.hidden_phone {
   display: none;
 }
 
