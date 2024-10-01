@@ -164,6 +164,7 @@ body {
   .container-titre {
     width: 100%;
   }
+
   .section-container {
     display: grid;
   }
@@ -197,4 +198,5 @@ body {
   .section-container-bis {
     margin-bottom: 0;
   }
+
 }/*# sourceMappingURL=galerie.css.map */
