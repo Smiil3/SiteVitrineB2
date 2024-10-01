@@ -19,10 +19,6 @@ body {
   margin: 0;
 }
 
-main {
-  margin-top: 15%;
-}
-
 #menu-header {
   display: flex;
   justify-content: space-between;
@@ -75,4 +71,4 @@ main {
 
 .cta:hover {
   color: rgb(0, 0, 0);
-}
+}/*# sourceMappingURL=header.css.map */
