@@ -114,3 +114,30 @@ body {
         }
     }
 }
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 912px)  { 
+body {
+    width: 100%;
+    .formulaire__container {
+        .formulaire__bottom {
+            height: 92vh;
+            flex-direction: column;
+            .img1,.img2 {
+                display: none;
+            }
+            .formulaire {
+                width: 90%;
+                .formulaire__info {
+                    .contactTitle {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+}

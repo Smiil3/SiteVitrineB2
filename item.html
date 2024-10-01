@@ -24,9 +24,17 @@
                     <a class="button" href="galerie.html">CARTE</a>
                     <a class="cta" href="contact.html">CONTACT</a>
                 </nav>
+                <div class="menu-icon">
+                    <img class="iconburger" src="img/menu.png" alt="Logo Menu">
+                </div>
             </div>
         </div>
     </header>
+    <div class="nav--phone hidden_phone">
+            <a class="button-phone" href="header.html#histoire">HISTOIRE</a>
+            <a class="button-phone" href="galerie.html">CARTE</a>
+            <a class="cta-phone" href="contact.html">CONTACT</a>
+    </div>
     <main>
         <div class="product__container"> 
             <div>
@@ -42,14 +50,29 @@
                     <h2 class="itemSubtitle">Description</h2>
                     <p class="itemParagraph">Loading..</p>
                     <br>
+                    <h2 class="itemSubtitle">Coût</h2>
+                    <p class="itemParagraph cout">Loading..</p>
+                    <br>
                     <h2 class="itemSubtitle">Ingrédients</h2>
                     <ul>
                     </ul>
                 </div>
-                <button class="back">RETOUR À LA CARTE</button>
+                <a href="galerie.html"><button class="back">RETOUR À LA CARTE</button></a>
             </div>
         </div>
+        <div class="none hidden">
+        <div class="fourofour">
+            <h1 class="itemTitle">Erreur 404</h1>
+            <div class="image404">
+                <img class="i404mg" alt="Image Erreur 404" src="img/404.png">
+            </div>
+            <div class="description__container">
+                <p class="itemParagraph">La page que vous cherchez n'existe pas.</p>
+            </div>
+        </div>
+    </div>
     </main>
     <script src="item.js"></script>
+    <script src="header.js"></script>
 </body>
 </html>

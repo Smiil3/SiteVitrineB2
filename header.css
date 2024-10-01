@@ -75,4 +75,65 @@ main {
 
 .cta:hover {
   color: rgb(0, 0, 0);
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 912px) {
+  body .cta, body .button {
+    display: none;
+  }
+  body .menu-icon {
+    margin: 0;
+    display: flex;
+    align-self: center;
+  }
+  body .menu-icon img {
+    height: 50px;
+    margin-right: -40px;
+  }
+  .yellow {
+    background-color: #fabc1d;
+  }
+  .white {
+    background-color: #ffffff;
+  }
+  .nav--phone {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .nav--phone .button-phone {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin: 15px;
+  }
+  .nav--phone .button-phone:hover {
+    color: #fabc1d;
+  }
+  .nav--phone .cta-phone {
+    background-color: #f15d49;
+    color: #ffffff;
+    padding: 5px 25px;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 12px;
+    margin: 15px;
+  }
+  .nav--phone .cta-phone:hover {
+    color: rgb(0, 0, 0);
+  }
+  .hidden_phone {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */
