@@ -164,4 +164,39 @@ body {
   .container-titre {
     width: 100%;
   }
+
+  .section-container {
+    display: grid;
+  }
+  .section-container .container-img {
+    margin: 0;
+  }
+  .section-container .container-img-bis {
+    margin: 0;
+  }
+  .section-container-bis {
+    display: grid;
+  }
+  .section-container-bis .container-img {
+    margin: 0;
+  }
+  .section-container-bis .container-img-bis {
+    margin: 0;
+  }
+  .container-img::after {
+    opacity: 1;
+  }
+  .container-img-bis::after {
+    opacity: 1;
+  }
+  .container-img .p {
+    opacity: 1;
+  }
+  .container-img-bis .p {
+    opacity: 1;
+  }
+  .section-container-bis {
+    margin-bottom: 0;
+  }
+
 }/*# sourceMappingURL=galerie.css.map */
