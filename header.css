@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  z-index: 5;
+  z-index: 9999;
   width: 100%;
   top: 3%;
   display: flex;
@@ -17,6 +17,10 @@ header {
 
 body {
   margin: 0;
+}
+
+main {
+  margin-top: 15%;
 }
 
 #menu-header {
