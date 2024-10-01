@@ -10,6 +10,53 @@ body {
 main {
     margin-top: 15%;
 }
+.hidden {
+    display: none;
+}
+.fourofour {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .itemTitle {
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        margin: 0;
+    }
+    .image404 {
+        border: 3px solid $color2;
+        border-radius: 12px;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        .i404mg {
+            width: 100%;
+        }
+    }
+    .description__container {
+        width: 70%;
+        background-color: $color3;
+        border: 3px solid black;
+        border-radius: 12px;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        .itemParagraph {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            ul {
+                margin: 0;
+            }
+        }
+    }
+}
 .product__container {
     display: flex;
     justify-content: space-evenly;
@@ -106,3 +153,39 @@ main {
 
     }
 }
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 912px)  { 
+
+    .fourofour {
+        height: 90vh;
+        .image404{
+            width: 300px;
+            height: 190px;
+        }
+    }
+    .product__container {
+        height: 150vh;
+        margin-top: 30%;
+        flex-direction: column;
+        align-items: center;
+        .image__container {
+            width: 300px;
+            height: 400px;
+        }
+        .text__container {
+            width: 95%;
+            height: 100%;
+            .itemTitle {
+                text-align: center;
+            }
+            .description__container {
+                text-align: center;
+                .itemParagraph {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
