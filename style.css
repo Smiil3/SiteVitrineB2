@@ -7,21 +7,37 @@ body {
 
 /* En-tête */
 header {
-    background-color: #4dd9b6; 
     position: fixed;
     z-index: 5;
     width: 100%;
+    top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 80%;
+    border-radius: 12px;
+    border: 3px solid black;
+    background-color: #ffffff;
+    align-items: center;
 }
 
 #menu-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px ;
+    padding: 10px 60px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
 }
 
 .logo {
     margin: 0;
+    display: flex;
+    align-self: center;
 }
 
 .logo img {
@@ -33,30 +49,37 @@ header {
     padding: 0;
     margin: 0;
     list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
 }
 
-.nav-links a {
+.button {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
-    font-size: 16px;
-    margin-left: 20px;
 }
 
-.nav-links a:hover {
-    color: orange;
+.button:hover {
+    color: #fabc1d;
 }
 
-.nav-title {
-    color: #ffffff; /* Couleur du texte */
-    font-family: 'Lilita One', cursive; /* Police pour le titre */
-    font-size: 24px; /* Taille de la police */
-    margin: 0; /* Supprimer les marges */
-    text-align: center; /* Centrer le texte */
-    position: absolute; /* Positionner de manière absolue */
-    left: 50%; /* Positionner à 50% à partir de la gauche */
-    transform: translateX(-50%); /* Déplacer vers la gauche de 50% pour centrer */
+.cta {
+    background-color: #f15d49;
+    color: #ffffff;
+    padding: 5px 25px;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 12px;
+    font-family: 'Lilita One', cursive;
+    font-style: normal;
+    font-size: 18px;
 }
+
+.cta:hover {
+    color: rgb(0, 0, 0);
+}
+
 .acceuil-background {
     height: 100vh; /* Hauteur de la fenêtre */
     width: 100vw;  /* Largeur de la fenêtre */
@@ -65,7 +88,6 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
 .acceuil-background img {
@@ -78,17 +100,6 @@ header {
 }
 
 .text-acceuil {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-  }
-
-  
-
-
-  .text-acceuil {
     position: absolute;
     top: 50%; 
     left: 50%;
@@ -107,98 +118,164 @@ header {
 }
 
 .text-acceuil p {
-    font-size: 19.2px; 
-    margin: 0 0 20px 0; 
-    font-size: 48px; /* Taille du titre */
-    margin: 0 0 20px 0; /* Espacement sous le titre */
-}
-
-.text-acceuil p {
     font-size: 19.2px; /* Taille du paragraphe */
     margin: 0 0 20px 0; /* Espacement sous le paragraphe */
 }
 
-.cta-button {
-    display: inline-block;
-    color: #ffffff;
-    background-color: #4dd9b6; 
-    text-decoration: none;
-    padding: 10px 10%;
-    border-radius: 12px;
-    border: none;
-    font-size: 15px;
-}
-
-.cta-button:hover {
-    background-color: #a5eefc;
-}
-
 /* Style général pour les sections de cocktails */
-.cocktail-section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    background-color: #efefef; 
+.nouveautes-section {
     padding: 40px 20px; 
-    margin: 20px 0; 
-    border-radius: 10px; 
+    background-color: #fabc1d; 
+    text-align: center; /* Centre le texte de la section */
+}
+
+/* Titre de la section des nouveautés */
+.nouveautes-section h2 {
+    font-family: 'Lilita One', cursive; /* Applique la police Lilita One */
+    font-size: 36px; 
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+/* Conteneur pour les éléments des cocktails */
+.nouveautes-content {
+    display: flex; 
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    justify-content: space-around; /* Répartit l'espace entre les éléments */
+}
+
+/* Style pour chaque élément de cocktail */
+.cocktail-item {
+    width: 22%; /* Largeur de chaque élément */
+    margin: 10px; /* Marge entre les éléments */
+    background-color: #fff; /* Fond blanc pour chaque élément */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Masque les débordements */
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 12px;
 }
 
-/* Styles pour les contenus de cocktails */
-.cocktail-content {
-    display: flex;
-    align-items: center; /* Centrer verticalement les éléments */
-    width: 100%;
-}
-
-/* Uniformisation des images au format 9:16 */
+/* Uniformisation des images au format 1:1 */
 .cocktail-image img {
-    width: 300px; 
-    height: 533px;  /* Format 9:16 */
-    object-fit: cover; 
-    border-radius: 10px;
-    margin: 0 20px; /* Marge autour des images */
+    width: 100%; 
+    height: 200px; /* Hauteur fixe pour un format carré */
+    object-fit:cover; 
 }
 
 /* Alignement du texte */
 .cocktail-text {
-    flex: 1; /* Prend l'espace restant */
-    padding: 0 20px; /* Ajout de padding pour espacer le texte des bords */
-    display: flex; /* Utilisation de flex pour centrer verticalement */
-    flex-direction: column; /* Orientation verticale des éléments */
-    justify-content: center; /* Centre le texte verticalement */
+    padding: 20px; /* Espacement interne */
 }
 
-.cocktail-text h2 {
-    font-family: 'Lilita One', cursive; /* Applique la police Lilita One aux h2 */
-    font-size: 24px; 
-    margin-bottom: 15px;
+/* Styles pour les titres et les paragraphes */
+.cocktail-text h3 {
+    font-family: 'Lilita One', cursive; /* Applique la police Lilita One */
+    font-size: 20px; 
+    margin-bottom: 10px;
 }
 
 .cocktail-text p {
-    font-size: 16px; 
+    font-size: 14px; 
     line-height: 1.5; /* Augmente l'espacement entre les lignes */
 }
 
-/* Styles pour ajuster l'espacement global */
-.cocktail-section {
-    padding: 30px; /* Espacement interne */
-}
-
-/* Responsive Design */
+/* Responsive Design pour petits écrans */
 @media (max-width: 768px) {
-    .cocktail-content {
-        flex-direction: column; /* Empile les éléments sur les petits écrans */
-        align-items: center; /* Centre les éléments */
+    .cocktail-item {
+        width: 45%; /* Ajuste la largeur pour les petits écrans */
     }
 
     .cocktail-image img {
-        width: 80%; /* Rendre les images plus larges sur mobile */
-        height: auto; /* Ajuste la hauteur automatiquement */
+        height: 150px; /* Ajuste la hauteur sur mobile */
     }
 
-    .cocktail-text {
-        text-align: center; /* Centre le texte sur mobile */
+    .text-acceuil h1 {
+        font-size: 36px; /* Réduit la taille du titre sur mobile */
     }
+
+    .text-acceuil p {
+        font-size: 16px; /* Réduit la taille du paragraphe sur mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Styles pour les articles Margarita Glacé et Sunset Martini */
+.article-cocktails {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #fabc1d;
+}
+
+.article-cocktails-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.article-cocktails h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.article-cocktails h2 {
+    font-family: 'Lilita One', cursive;
+    font-size: 28px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.article-cocktails p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.cocktail-article-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cocktail-article-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    height: 200px; /* Hauteur fixe pour un format carré */
+    object-fit:cover; 
+    border: 3px solid black;
+    border-radius: 12px;
+}
+
+/* Styles CTA alignement vertical */
+.nouveautes-content .cocktail-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nouveautes-content .cocktail-item .cta {
+    margin: 20px 0;
+    align-self: center;
+}
+
+/* Global padding for better layout */
+body {
+    padding: 0 20px;
 }
