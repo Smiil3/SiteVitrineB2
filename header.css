@@ -19,10 +19,6 @@ body {
   margin: 0;
 }
 
-main {
-  margin-top: 15%;
-}
-
 #menu-header {
   display: flex;
   justify-content: space-between;
