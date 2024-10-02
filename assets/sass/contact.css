@@ -1,0 +1,132 @@
+body {
+  background-color: #fabc1d;
+}
+body main {
+  margin-top: 15%;
+}
+body .formulaire__container .formulaire__bottom {
+  background-color: #fabc1d;
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  align-items: center;
+}
+body .formulaire__container .formulaire__bottom img {
+  height: 500px;
+  border: 3px solid black;
+  border-radius: 12px;
+}
+body .formulaire__container .formulaire__bottom .formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+}
+body .formulaire__container .formulaire__bottom .formulaire .formulaire__info {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .formulaire__container .formulaire__bottom .formulaire .formulaire__info .contactTitle {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+body .formulaire__container .formulaire__bottom .formulaire .formulaire__info .paragrapheTitle {
+  width: 90%;
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body .formulaire__container .formulaire__bottom .formulaire .flexColumn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+body .formulaire__container .formulaire__bottom .formulaire .flexColumn label {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+body .formulaire__container .formulaire__bottom .formulaire .flexColumn #message {
+  height: 10vh;
+  resize: none;
+  border-radius: 12px;
+  border: 0px;
+  border: 3px solid #000000;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body .formulaire__container .formulaire__bottom .formulaire .flexColumn input {
+  height: 2.5vh;
+  border-radius: 12px;
+  border: 0px;
+  border: 3px solid #000000;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body .formulaire__container .formulaire__bottom .formulaire .nameFirstnameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+body .formulaire__container .formulaire__bottom .formulaire .nameFirstnameContainer .fiftyInput {
+  width: 49%;
+}
+body .formulaire__container .formulaire__bottom .formulaire .buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .formulaire__container .formulaire__bottom .formulaire .buttonContainer button {
+  padding: 10px 10% 10px 10%;
+  background-color: #f15d49;
+  border-radius: 12px;
+  border: 0px;
+  font-size: 18px;
+  border: 3px solid #000000;
+  width: auto;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .formulaire__container .formulaire__bottom .formulaire .buttonContainer button:hover {
+  color: rgb(0, 0, 0);
+}
+
+footer {
+  margin-top: 100px;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 912px) {
+  body {
+    width: 100%;
+  }
+  body .formulaire__container .formulaire__bottom {
+    height: 92vh;
+    flex-direction: column;
+  }
+  body .formulaire__container .formulaire__bottom .img1, body .formulaire__container .formulaire__bottom .img2 {
+    display: none;
+  }
+  body .formulaire__container .formulaire__bottom .formulaire {
+    width: 90%;
+  }
+  body .formulaire__container .formulaire__bottom .formulaire .formulaire__info .contactTitle {
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=contact.css.map */
