@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cocktail - Site vitrine</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,18 +22,25 @@
         <div class="navbar">
             <div id="menu-header">
                 <div class="logo">
-                    <img src="img/contact/logo.png" alt="Logo Cocktail">
+                    <a href="header.html"><img src="img/contact/logo.png" alt="Logo Cocktail"></a>
                 </div>
-                <p>COCKTAIL GLOUGLOU</p>
                 <nav class="nav-links">
                     <a class="button" href="header.html#histoire">HISTOIRE</a>
                     <a class="button" href="galerie.html">CARTE</a>
                     <a class="cta" href="contact.html">CONTACT</a>
                 </nav>
+                <div class="menu-icon">
+                    <img class="iconburger" src="img/menu.png" alt="Logo Menu">
+                </div>
             </div>
         </div>
     </header>
-
+    <div class="nav--phone hidden_phone">
+            <a class="button-phone" href="header.html#histoire">HISTOIRE</a>
+            <a class="button-phone" href="galerie.html">CARTE</a>
+            <a class="cta-phone" href="contact.html">CONTACT</a>
+    </div>
+<main>
     <div class="acceuil-background">
         <img src="img/acceuil-background.jpg" alt="Fond d'accueil">
         <div class="text-acceuil">
@@ -138,6 +147,30 @@
         </div>
     </div>
 </section>
+</main>
+<footer>
+    <div class="footer">
+        <section class="section-container-footer">
+            <div class="container-social">
 
+            </div>
+            <div class="container-footer">
+                <a href="mentions.html">Mentions légales</a>
+                <a href="mentions.html">Politique de confidentialité</a>
+                <a href="mentions.html">Cookies</a>
+
+
+            </div>
+            <div class="container-cta"> 
+                <a class="cta" href="contact.html">CONTACT</a>
+            </div>
+            <div class="container-made">
+                <p>Concocté avec 🧡 par <a href="https://linktr.ee/TicketResto">Ticket Resto</a></p>
+            </div>
+        </section>
+    </div>
+</footer>
+<script src="item.js"></script>
+<script src="header.js"></script>
 </body>
 </html>
