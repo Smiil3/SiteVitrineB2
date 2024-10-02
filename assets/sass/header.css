@@ -1,0 +1,143 @@
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 80%;
+  border-radius: 12px;
+  border: 3px solid black;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin-top: 15%;
+}
+
+#menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.logo {
+  margin: 0;
+  display: flex;
+  align-self: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 35%;
+}
+
+.button {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.button:hover {
+  color: #fabc1d;
+}
+
+.cta {
+  background-color: #f15d49;
+  color: #ffffff;
+  padding: 5px 25px;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 12px;
+}
+
+.cta:hover {
+  color: rgb(0, 0, 0);
+}
+
+.menu-icon {
+  display: none;
+}
+
+.hidden_phone {
+  display: none;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 912px) {
+  body .cta, body .button {
+    display: none;
+  }
+  body .menu-icon {
+    margin: 0;
+    display: flex;
+    align-self: center;
+  }
+  body .menu-icon img {
+    height: 50px;
+    margin-right: -40px;
+  }
+  .yellow {
+    background-color: #fabc1d;
+  }
+  .white {
+    background-color: #ffffff;
+  }
+  .nav--phone {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .nav--phone .button-phone {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin: 15px;
+  }
+  .nav--phone .button-phone:hover {
+    color: #fabc1d;
+  }
+  .nav--phone .cta-phone {
+    background-color: #f15d49;
+    color: #ffffff;
+    padding: 5px 25px;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 12px;
+    margin: 15px;
+  }
+  .nav--phone .cta-phone:hover {
+    color: rgb(0, 0, 0);
+  }
+  .hidden_phone {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */
