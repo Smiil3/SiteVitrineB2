@@ -4,6 +4,12 @@ body {
     font-family: 'Poppins', sans-serif; /* Police de secours */
     height: 100%;
 }
+main{
+    background-color: #fabc1d;
+}
+footer{
+    background-color: #fabc1d;
+}
 
 
 
@@ -11,10 +17,6 @@ body {
     height: 100vh; /* Hauteur de la fenêtre */
     width: 100vw;  /* Largeur de la fenêtre */
     overflow: hidden; /* Évite les barres de défilement */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .acceuil-background img {
@@ -51,6 +53,7 @@ body {
 
 /* Style général pour les sections de cocktails */
 .nouveautes-section {
+    padding-top: 0 !important;
     padding: 40px 20px; 
     background-color: #fabc1d; 
     text-align: center; /* Centre le texte de la section */
@@ -61,7 +64,7 @@ body {
     font-family: 'Lilita One', cursive; /* Applique la police Lilita One */
     font-size: 36px; 
     margin-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 /* Conteneur pour les éléments des cocktails */
@@ -182,11 +185,17 @@ body {
     max-width: 100%;
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%; 
-    height: 200px; /* Hauteur fixe pour un format carré */
+    width: 400px;
+    height: 400px;
     object-fit:cover; 
     border: 3px solid black;
     border-radius: 12px;
+}
+@media (max-width: 768px) {
+    .cocktail-article-image {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 /* Styles CTA alignement vertical */
@@ -202,7 +211,4 @@ body {
     align-self: center;
 }
 
-/* Global padding for better layout */
-body {
-    padding: 0 20px;
-}
+
